@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="360dp"
+    android:layout_height="360dp"
+    android:layout_centerInParent="true"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageView"
+        android:src="@drawable/bg"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="0dp"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="100%"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="消息提示"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_marginTopPercent="21%" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        app:layout_heightPercent="7%"
+        app:layout_marginTopPercent="28%"
+        app:layout_widthPercent="60%"
+        />
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyPreviewHeight="40dip"
+        android:keyTextColor="#000000"
+        android:keyBackground="@drawable/textview_border"
+        app:layout_heightPercent="40%"
+        app:layout_marginTopPercent="42%"
+
+        app:layout_widthPercent="60%" />
+
+    <ImageButton
+        android:id="@+id/iB_back"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        app:layout_heightPercent="7%"
+        app:layout_marginTopPercent="90%"
+        app:layout_widthPercent="7%" />
+
+</android.support.percent.PercentRelativeLayout>
